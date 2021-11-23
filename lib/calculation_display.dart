@@ -24,14 +24,14 @@ class Display extends StatelessWidget {
     Key? key,
   }) : super(key: key);
 
-  final String typedValues = '0';
+  final String initialValue = '0';
 
   @override
   Widget build(BuildContext context) {
     return Container(
       alignment: Alignment.bottomRight,
       child: Text(
-        typedValues,
+        initialValue,
         style: const TextStyle(
           fontSize: 100,
         ),
