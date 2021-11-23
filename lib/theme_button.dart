@@ -19,13 +19,12 @@ class _ThemeButtonState extends State<ThemeButton> {
   Widget build(BuildContext context) {
     return TextButton(
       onPressed: () {
-        setState(() {
-          if (widget.icon == Icons.light_mode) {
-            isLightMode = true;
-          } else {
-            isLightMode = false;
-          }
-        });
+        if (widget.icon == Icons.light_mode) {
+          isLightMode = true;
+        } else {
+          isLightMode = false;
+        }
+        setState(() {});
       },
       child: Icon(
         widget.icon,
